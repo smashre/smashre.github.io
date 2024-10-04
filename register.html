@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Register</h1></header><br>
+
+    <form action="index.php" method="POST" encryption="multipart/form-data">
+        
+        <label for="username">user: </label>
+        <input id="user" type="text" placeholder="username" minlength="4" maxlength="8" ><br><br>
+        
+        <label for="password">pass:</label>
+        <input type="pass" id="password" placeholder="password" minlength="4" maxlength="8" ><br><br>
+        
+        <label for="email">email:</label>
+        <input type="email" id="email" placeholder="email@gmail.com" minlength="4" maxlength="8"><br><br>
+        
+        <label for="phone">phone #:</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="4" maxlength="8" ><br><br>
+        
+        <label for="bday">birthdate :</label>
+        <input type="date" id="bday" ><br><br>
+        
+        <label for="quantity">quantity :</label>
+        <input type="number" id="quantity" min="1" max="2"><br><br>
+
+        <label for="world">world: </label><br><br> 
+        <input type="radio" id="blue" value="blue" name="world">
+        <label for="blue">blue</label><br>
+        <input type="radio" id="yellow" value="yellow" name="world">
+        <label for="yellow">yellow</label><br>
+        <input type="radio" id="green" value="green" name="world"> 
+        <label for="green">green</label><br><br>
+
+        <label for="payment">crypto: </label><br><br> 
+        <select>
+            <option value="bitcoin">bitcoin</option>
+            <option value="dodge">dodge</option>
+            <option value="smashium">smashium</option>
+        </select><br><br>
+
+        <label for="file">profile pic :</label>
+        <input type="file" id="pfp" accept="image/png"><br><br>
+        
+        
+        <input id="submit" type="submit">
+    </form>
+</body>
+</html>
